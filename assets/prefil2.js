@@ -395,11 +395,9 @@ function formatTelInput() {
         var currentValue = e.target.value;
         //console.log(e.target.value.length);
         if (e.target.value.length > 12) {
-            console.log('over 12');
             e.target.value = previousValue;
             return;
         }
-        console.log(e.target.value.length, 'backspace pressed = ' + e.inputType === "deleteContentBackward");
         if (e.inputType === "deleteContentBackward" && previousValue == '') return;
 
         if (previousValue.length === currentValue.length - 1 && currentValue.startsWith(previousValue)) {
@@ -409,22 +407,11 @@ function formatTelInput() {
                 }
             }
         } else if (e.inputType !== "deleteContentBackward" && e.target.value.length < 12) {
-            console.log('worked white spaces');
             const pastedStr = e.target.value.substring(0, 10);
             e.target.value = pastedStr.slice(0, 3) + " " + pastedStr.slice(3, 6) + " " + pastedStr.slice(6)
         }
         previousValue = e.target.value;
     }, false);
-
-    // let prev = '';
-    // telInput.addEventListener('keydown', (e) => {
-    //     console.log('worked', e.target.value.length);
-    //     if (e.target.value.length > 12) {
-    //         e.target.value = prev;
-    //         return;
-    //     }
-    //     prev = e.target.value;
-    // });
 }
 
 $(".option_val").change(function () {
