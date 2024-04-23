@@ -408,7 +408,7 @@ function formatTelInput() {
                     telInput.value += " ";
                 }
             }
-        } else if (e.inputType !== "deleteContentBackward" && e.target.value.length <= 12) {
+        } else if (e.inputType !== "deleteContentBackward" && e.target.value.length < 12) {
             console.log('worked white spaces');
             const pastedStr = e.target.value.substring(0, 10);
             e.target.value = pastedStr.slice(0, 3) + " " + pastedStr.slice(3, 6) + " " + pastedStr.slice(6)
