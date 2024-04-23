@@ -392,7 +392,6 @@ function formatTelInput() {
 
     let previousValue = '';
     telInput.addEventListener('input', (e) => {
-        console.log('input worked');
         var currentValue = e.target.value;
         //console.log(e.target.value.length);
         if (e.target.value.length > 12) {
@@ -400,7 +399,7 @@ function formatTelInput() {
             e.target.value = previousValue;
             return;
         }
-        console.log('backspace pressed = ' + e.inputType === "deleteContentBackward");
+        console.log(e.target.value, 'backspace pressed = ' + e.inputType === "deleteContentBackward");
         if (e.inputType === "deleteContentBackward" && previousValue == '') return;
 
         if (previousValue.length === currentValue.length - 1 && currentValue.startsWith(previousValue)) {
