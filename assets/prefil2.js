@@ -392,9 +392,11 @@ function formatTelInput() {
 
     let previousValue = '';
     telInput.addEventListener('input', (e) => {
+        console.log('input worked');
         var currentValue = e.target.value;
         //console.log(e.target.value.length);
-        if (e.target.value.length > 12) {
+        if (e.target.value.length > 11) {
+            console.log('over 11');
             e.target.value = previousValue;
             return;
         }
@@ -407,6 +409,7 @@ function formatTelInput() {
                 }
             }
         } else if (e.inputType !== "deleteContentBackward") {
+            console.log('worked white spaces');
             const pastedStr = e.target.value.substring(0, 10);
             e.target.value = pastedStr.slice(0, 3) + " " + pastedStr.slice(3, 6) + " " + pastedStr.slice(6)
         }
