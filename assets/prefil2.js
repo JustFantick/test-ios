@@ -399,7 +399,7 @@ function formatTelInput() {
             e.target.value = previousValue;
             return;
         }
-        console.log(e.target.value, 'backspace pressed = ' + e.inputType === "deleteContentBackward");
+        console.log(e.target.value.length, 'backspace pressed = ' + e.inputType === "deleteContentBackward");
         if (e.inputType === "deleteContentBackward" && previousValue == '') return;
 
         if (previousValue.length === currentValue.length - 1 && currentValue.startsWith(previousValue)) {
