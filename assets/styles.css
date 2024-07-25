@@ -760,33 +760,8 @@
   grid-template-rows: 1fr;
 }
 
-.tabs-wrapper .product-info-tabs .tab-wrapper.divider {
-  border-top: 1px solid #dbdbdb;
-}
-
-.tabs-wrapper .product-info-tabs .tab-wrapper[open] {
-  height: auto;
-}
-.tabs-wrapper .product-info-tabs .tab-wrapper {
-  border-bottom: 1px solid #dbdbdb;
-  margin-bottom: 0;
-  position: relative;
-  padding: 12px 14px;
-  height: 45px;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-main,
-footer,
-header,
-nav,
-section,
-summary {
-  display: block;
+details summary::-webkit-details-marker {
+  display: none;
 }
 
 /* Spoilers section */
