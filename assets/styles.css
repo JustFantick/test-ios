@@ -760,6 +760,21 @@
   grid-template-rows: 1fr;
 }
 
+@media only screen and (max-width: 1200px) {
+  * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
 /* Spoilers section */
 .spoilers-section {
   max-width: 1300px;
