@@ -3,50 +3,529 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+
     <title>Document</title>
   </head>
   <body>
-    <style>
-      ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        flex-wrap: wrap;
-      }
+    <div class="spoilers-section">
+      <div class="spoilers-section__container">
+        <div class="section-content">
+          <details
+            class="tab-wrapper divider key-features"
+            id="product-tabs-icons"
+          >
+            <summary>
+              <h2 class="tab-menu-link" data-value="delivery">
+                Caractéristiques principales
+              </h2>
+            </summary>
+            <div class="section-content">
+              <div class="section-content-inner">
+                <div class="icons-list-wrap">
+                  <div class="icons-list-container">
+                    <ul class="icons-list">
+                      <li>
+                        <div class="icon-desc">
+                          <span class="icons_label">30 year warranty</span>
+                          <span class="icons_value"
+                            >Covered by our 30 year limited warranty</span
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-desc">
+                          <span class="icons_label">Dos rembourrés</span>
+                          <span class="icons_value"></span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-desc">
+                          <span class="icons_label">Résistant à l'eau</span>
+                          <span class="icons_value"></span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+          <details class="tab-wrapper" id="product-tabs-description">
+            <summary>
+              <h2 class="tab-menu-link" data-value="delivery">
+                Description du produit
+              </h2>
+            </summary>
+            <div class="section-content">
+              <div class="section-content-inner">
+                <div class="product-info-description">
+                  <div class="product attribute description">
+                    <div class="value checkEmpty">
+                      Notre sac à dos emblématique Eastpak, conçu pour vous
+                      accompagner au travail, dans vos loisirs et partout où
+                      votre journée vous mène. Rangez vos essentiels dans la
+                      poche avant et réglez les bretelles rembourrées pour plus
+                      de confort.
+                    </div>
+                  </div>
+                  <div class="product attribute short_description">
+                    <h3
+                      class="product-description-heading"
+                      style="margin-top: 10px"
+                    >
+                      Spécification
+                    </h3>
+                    <div class="value checkEmpty">
+                      <ul>
+                        <li>
+                          Dans notre coloris
+                          <span class="insert-color"
+                            >Lavender Lilac (Violet)</span
+                          >
+                        </li>
+                        <li>
+                          Compartiment principal avec une poche avant zippée
+                        </li>
+                        <li style="display: none">
+                          Hauteur&nbsp;: 40&nbsp;cm, Largeur&nbsp;: 30&nbsp;cm,
+                          Profondeur&nbsp;: 18&nbsp;cm
+                        </li>
+                        <li>Fabrication 100% nylon ultra-résistant</li>
+                        <li>Bretelles réglables et panneau dorsal rembourré</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+          <details class="tab-wrapper" id="product-extra-content-sketchfab">
+            <summary>
+              <h2 class="tab-menu-link" data-value="delivery">
+                Commentaires <span> 4.2 (167) </span>
+              </h2>
+            </summary>
+            <div class="section-content section-content-3rd">
+              <div class="rating-cols">
+                <div class="rating-cols__col col_1">
+                  <div class="col_1__row">
+                    <h6>4.2</h6>
+                    <div class="star-rating">
+                      <div class="star-rating__star"></div>
+                      <div class="star-rating__star"></div>
+                      <div class="star-rating__star"></div>
+                      <div class="star-rating__star"></div>
+                      <div class="star-rating__star"></div>
+                    </div>
+                    <p>167 avis</p>
+                  </div>
 
-      .two-blocks-section__col video {
-        max-height: 300px;
-        object-fit: contain;
-        pointer-events: none;
-      }
-    </style>
-    <h1>Video on IOS</h1>
-    <ul>
-      <li>
-        <h2>V1</h2>
-        <div class="two-blocks-section__col">
-          <video loop autoplay muted>
-            <source src="assets/info_3.mp4" type="video/mp4" />
-          </video>
+                  <button type="button">Écrire un avis</button>
+                </div>
+                <div class="rating-cols__col col_2">
+                  <button type="button">
+                    <img src="assets/check-black-circle.svg" alt="" /> 80%
+                  </button>
+                  <p>des répondants recommanderaient à un ami</p>
+                </div>
+                <div class="rating-cols__col col_3">
+                  <div class="col_3-row">
+                    <div class="col_3-row__rating">
+                      5<img src="assets/star-fill.png" alt="" />
+                    </div>
+                    <div class="col_3-row__progressbar progress-val_1"></div>
+                    <div class="col_3-row__counter">114</div>
+                  </div>
+                  <div class="col_3-row">
+                    <div class="col_3-row__rating">
+                      4<img src="assets/star-fill.png" alt="" />
+                    </div>
+                    <div class="col_3-row__progressbar progress-val_2"></div>
+                    <div class="col_3-row__counter">16</div>
+                  </div>
+                  <div class="col_3-row">
+                    <div class="col_3-row__rating">
+                      3<img src="assets/star-fill.png" alt="" />
+                    </div>
+                    <div class="col_3-row__progressbar progress-val_3"></div>
+                    <div class="col_3-row__counter">10</div>
+                  </div>
+                  <div class="col_3-row">
+                    <div class="col_3-row__rating">
+                      2<img src="assets/star-fill.png" alt="" />
+                    </div>
+                    <div class="col_3-row__progressbar progress-val_4"></div>
+                    <div class="col_3-row__counter">9</div>
+                  </div>
+                  <div class="col_3-row">
+                    <div class="col_3-row__rating">
+                      1<img src="assets/star-fill.png" alt="" />
+                    </div>
+                    <div class="col_3-row__progressbar progress-val_5"></div>
+                    <div class="col_3-row__counter">18</div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews-list" id="scroll-to-reviews-list">
+                <div class="review">
+                  <div class="review__head">
+                    <div style="display: flex; align-items: center; gap: 10px">
+                      <div class="star-rating_2">
+                        <img src="assets/star-fill.png" alt="" />
+                        <img src="assets/star-fill.png" alt="" />
+                        <img src="assets/star-fill.png" alt="" />
+                        <img src="assets/star-fill.png" alt="" />
+                        <img src="assets/star-fill.png" alt="" />
+                      </div>
+                      <p style="margin: 0">5</p>
+                    </div>
+                    <h4>Il est incroyable</h4>
+                  </div>
+                  <div class="review__text">
+                    Ce sac est super pratique et hyper stylé
+                  </div>
+                  <div class="review__footer">
+                    <p>Est-ce que cet avis est utile?</p>
+                    <div class="like-dislike">
+                      <button class="like-dislike__like">
+                        <img src="assets/like-thumb.svg" alt="" />
+                        <span>44</span>
+                      </button>
+                      <button class="like-dislike__dislike">
+                        <img src="assets/dislike-thumb.svg" alt="" />
+                        <span>10</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="review__right">
+                    <p><strong>Soumis </strong> <span>il y a 2 mois</span></p>
+                    <p><strong>Par</strong> <span>Teresa</span></p>
+                    <p>
+                      <img src="assets/verified-buyer-icon.svg" alt="" />
+                      Acheteur Vérifié
+                    </p>
+                  </div>
+                </div>
+
+                <div class="review">
+                  <div class="review__head">
+                    <div style="display: flex; align-items: center; gap: 10px">
+                      <div class="star-rating_2">
+                        <img src="assets/star-fill.png" alt="" />
+                        <img src="assets/star-fill.png" alt="" />
+                        <img src="assets/star-fill.png" alt="" />
+                        <img src="assets/star-fill.png" alt="" />
+                        <img src="assets/star-fill.png" alt="" />
+                      </div>
+                      <p style="margin: 0">5</p>
+                    </div>
+                    <h4>Pratique et discret sans être partout</h4>
+                  </div>
+                  <div class="review__text">
+                    Mon Eastpack est ultra pratique, très confortable et
+                    imperméable. Je conseille fortement cet article en raison de
+                    sa discrétion. J'ai le même qu'une amie mais nous devons
+                    être 3 sur 400 à avoir CE modèle et CETTE couleur !! Je le
+                    re et re re re conseille !
+                  </div>
+                  <div class="review__footer">
+                    <p>Est-ce que cet avis est utile?</p>
+                    <div class="like-dislike">
+                      <button class="like-dislike__like">
+                        <img src="assets/like-thumb.svg" alt="" />
+                        <span>36</span>
+                      </button>
+                      <button class="like-dislike__dislike">
+                        <img src="assets/dislike-thumb.svg" alt="" />
+                        <span>8</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="review__right">
+                    <p><strong>Soumis </strong> <span>il y a 2 mois</span></p>
+                    <p><strong>Par</strong> <span>gris fonçé</span></p>
+                    <!-- <p> <img src="assets/verified-buyer-icon.svg" alt="" /> Acheteur Vérifié</p> -->
+                  </div>
+                </div>
+
+                <div class="review">
+                  <div class="review__head">
+                    <div style="display: flex; align-items: center; gap: 10px">
+                      <div class="star-rating_2">
+                        <img src="assets/star-fill.png" alt="" />
+                        <img src="assets/star-fill.png" alt="" />
+                        <img src="assets/star-fill.png" alt="" />
+                        <img src="assets/star-fill.png" alt="" />
+                        <img src="assets/star-fill.png" alt="" />
+                      </div>
+                      <p style="margin: 0">5</p>
+                    </div>
+                    <h4>Un design parfait!</h4>
+                  </div>
+                  <div class="review__text">
+                    Le sac à dos Eastpak Padded Pak'r est bien plus qu'un simple
+                    accessoire, il est une icône de style et de fonctionnalité.
+                    Avec son design emblématique et sa construction robuste, ce
+                    sac à dos incarne la fusion parfaite entre la mode urbaine
+                    et la praticité au quotidien.
+
+                    <img src="assets/proof_3.jpg" alt="" />
+                  </div>
+                  <div class="review__footer">
+                    <p>Est-ce que cet avis est utile?</p>
+                    <div class="like-dislike">
+                      <button class="like-dislike__like">
+                        <img src="assets/like-thumb.svg" alt="" />
+                        <span>19</span>
+                      </button>
+                      <button class="like-dislike__dislike">
+                        <img src="assets/dislike-thumb.svg" alt="" />
+                        <span>3</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="review__right">
+                    <p><strong>Soumis </strong> <span>il y a 1 mois</span></p>
+                    <p><strong>Par</strong> <span>Éliz</span></p>
+                  </div>
+                </div>
+
+                <div class="review">
+                  <div class="review__head">
+                    <div style="display: flex; align-items: center; gap: 10px">
+                      <div class="star-rating_2">
+                        <img src="assets/star-fill.png" alt="" />
+                        <img src="assets/star-fill.png" alt="" />
+                        <img src="assets/star-fill.png" alt="" />
+                        <img src="assets/star-fill.png" alt="" />
+                        <img src="assets/star-fill.png" alt="" />
+                      </div>
+                      <p style="margin: 0">5</p>
+                    </div>
+                    <h4>Solide et de haute qualité.</h4>
+                  </div>
+                  <div class="review__text">
+                    Je n'achète que celui-ci parce que c'est le meilleur !
+                    Excellent rapport qualité-prix.
+                    <img src="assets/proof_6.jpg" alt="" />
+                  </div>
+                  <div class="review__footer">
+                    <p>Est-ce que cet avis est utile?</p>
+                    <div class="like-dislike">
+                      <button class="like-dislike__like">
+                        <img src="assets/like-thumb.svg" alt="" />
+                        <span>27</span>
+                      </button>
+                      <button class="like-dislike__dislike">
+                        <img src="assets/dislike-thumb.svg" alt="" />
+                        <span>4</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="review__right">
+                    <p>
+                      <strong>Soumis </strong> <span>il y a 3 semaines</span>
+                    </p>
+                    <p><strong>Par</strong> <span>Ludovic</span></p>
+                    <!-- <p> <img src="assets/verified-buyer-icon.svg" alt="" /> Acheteur Vérifié</p> -->
+                  </div>
+                </div>
+
+                <div class="review">
+                  <div class="review__head">
+                    <div style="display: flex; align-items: center; gap: 10px">
+                      <div class="star-rating_2">
+                        <img src="assets/star-fill.png" alt="" />
+                        <img src="assets/star-fill.png" alt="" />
+                        <img src="assets/star-fill.png" alt="" />
+                        <img src="assets/star-fill.png" alt="" />
+                        <img src="assets/star-fill.png" alt="" />
+                      </div>
+                      <p style="margin: 0">5</p>
+                    </div>
+                    <h4>Sac à dos éternel</h4>
+                  </div>
+                  <div class="review__text">
+                    Je l'ai acheté il y a 4 ans après avoir cassé mon ancien
+                    modèle (le même) après l'avoir utilisé 10 fois par jour. Je
+                    l'utilise tous les jours et n'en prends absolument pas soin,
+                    mais il est toujours en excellent état et tout aussi solide.
+                  </div>
+                  <div class="review__footer">
+                    <p>Est-ce que cet avis est utile?</p>
+                    <div class="like-dislike">
+                      <button class="like-dislike__like">
+                        <img src="assets/like-thumb.svg" alt="" />
+                        <span>14</span>
+                      </button>
+                      <button class="like-dislike__dislike">
+                        <img src="assets/dislike-thumb.svg" alt="" />
+                        <span>3</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="review__right">
+                    <p>
+                      <strong>Soumis </strong> <span>il y a 2 semaines</span>
+                    </p>
+                    <p><strong>Par</strong> <span>Loris</span></p>
+                    <p>
+                      <img src="assets/verified-buyer-icon.svg" alt="" />
+                      Acheteur Vérifié
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+          <details class="tab-wrapper" id="delivery_returns">
+            <summary>
+              <h2 class="tab-menu-link" data-value="delivery">
+                Livraisons et retours
+              </h2>
+            </summary>
+            <div class="section-content">
+              <div class="section-content-inner">
+                <div class="tab-content delivery">
+                  <div class="tab-wrapper-free-delivery">
+                    <div class="title standard-delivery-free">
+                      Modes de livraison
+                    </div>
+                    <ul>
+                      <li class="option">
+                        <span class="">Livraison Standard</span>
+                        <span class="price">- Gratuite</span>
+                        <p>
+                          Livraison sous <b>2-3 jours ouvrés</b> (dans des
+                          circonstances normales) - Retours gratuits.
+                        </p>
+                      </li>
+                      <li class="option">
+                        <span class="">Livraison Express</span>
+                        <span class="price">- 12,00&nbsp;€</span>
+                        <p>
+                          Livraison express pour les commandes placées avant
+                          12h, du lundi au jeudi (sauf week-ends et jours
+                          fériés) - Retours gratuits.
+                        </p>
+                      </li>
+                      <li class="option">
+                        <span class="">Point de retrait</span>
+                        <span class="price">- Gratuite</span>
+                        <p>
+                          Livraison gratuite dans le point relais de votre
+                          choix, sous <b>2-3 jours ouvrés</b> (dans des
+                          circonstances normales) - Retours gratuits.
+                        </p>
+                      </li>
+                    </ul>
+                    <div class="return-free">
+                      <style>
+                        #html-body [data-pb-style="L6KKKRQ"] {
+                          justify-content: flex-start;
+                          display: flex;
+                          flex-direction: column;
+                          background-position: left top;
+                          background-size: cover;
+                          background-repeat: no-repeat;
+                          background-attachment: scroll;
+                        }
+                        #html-body [data-pb-style="L6KKKRQ"],
+                        #html-body [data-pb-style="XO93YIC"] {
+                          border-style: none;
+                          border-width: 1px;
+                          border-radius: 0;
+                          margin: 0;
+                          padding: 0;
+                        }
+                      </style>
+                      <div
+                        data-content-type="row"
+                        data-appearance="full-bleed"
+                        data-enable-parallax="0"
+                        data-parallax-speed="0.5"
+                        data-background-images="{}"
+                        data-video-fallback-src=""
+                        data-element="main"
+                        data-pb-style="L6KKKRQ"
+                      >
+                        <div
+                          data-content-type="html"
+                          data-appearance="default"
+                          data-element="main"
+                          data-pb-style="XO93YIC"
+                          data-decoded="true"
+                        >
+                          <div class="title">Retours gratuits</div>
+                          <p>
+                            Si pour quelconque raison vous n'êtes pas satisfait
+                            de votre commande vous pouvez la retourner pour un
+                            remboursement total dans les 30 jours suivant le
+                            jour de livraison, si l'article n'a pas été porté ni
+                            utilisé ainsi que dans son emballage d'origine.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+          <details class="tab-wrapper" id="product-tabs-product_care">
+            <summary>
+              <h2 class="tab-menu-link" data-value="delivery">
+                Matériel et maintenance
+              </h2>
+            </summary>
+            <div class="section-content">
+              <div class="section-content-inner">
+                <div id="product_care" class="product_care">
+                  <h3>Matériel</h3>
+                  <div class="material_desc">
+                    <div>Matériel extérieur:</div>
+                    <div>Fabrication 100% nylon ultra-résistant</div>
+                  </div>
+                  <div class="material_desc">
+                    <div>Résistant à l'eau:</div>
+                    <div>Oui</div>
+                  </div>
+                  <div
+                    data-content-type="html"
+                    data-appearance="default"
+                    data-element="main"
+                    data-decoded="true"
+                  >
+                    <div>
+                      <h3>Maintenance produit</h3>
+                      <p>
+                        <span
+                          >Votre sac à besoin d’un nettoyage? La meilleure
+                          solution est d’utiliser un chiffon humide, ou s’il y a
+                          une tache, de l’eau et du savon fonctionneront très
+                          bien. <br />
+                        </span>
+                        <span>
+                          Pour une protection supplémentaire, vous pouvez
+                          utiliser un spray protecteur universel.<br />
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
         </div>
-      </li>
-      <li>
-        <h2>V2</h2>
-        <div class="two-blocks-section__col">
-          <video loop autoplay muted playsinline preload="auto">
-            <source src="assets/info_1.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </li>
-      <li>
-        <h2>V3</h2>
-        <div class="two-blocks-section__col">
-          <video loop autoplay muted>
-            <source src="assets/info_3.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </li>
-    </ul>
+      </div>
+    </div>
   </body>
 </html>
