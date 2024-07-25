@@ -767,6 +767,10 @@
   width: 100%;
 }
 
+.spoilers-section * {
+  list-style: none !important;
+}
+
 @media (max-width: 768px) {
   .spoilers-section__container {
     padding-left: 0 !important;
