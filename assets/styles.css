@@ -760,19 +760,33 @@
   grid-template-rows: 1fr;
 }
 
-@media only screen and (max-width: 1200px) {
-  * {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
+.tabs-wrapper .product-info-tabs .tab-wrapper.divider {
+  border-top: 1px solid #dbdbdb;
 }
 
-* {
-  box-sizing: border-box;
+.tabs-wrapper .product-info-tabs .tab-wrapper[open] {
+  height: auto;
+}
+.tabs-wrapper .product-info-tabs .tab-wrapper {
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 0;
+  position: relative;
+  padding: 12px 14px;
+  height: 45px;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+main,
+footer,
+header,
+nav,
+section,
+summary {
+  display: block;
 }
 
 /* Spoilers section */
